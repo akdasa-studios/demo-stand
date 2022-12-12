@@ -47,6 +47,11 @@ body {
     margin: 10px;
 }
 
+.disabled {
+    opacity: 0.1;
+    pointer-events: none;
+}
+
 .buttons {
     display: flex;
     flex-direction: row;
