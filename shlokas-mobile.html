@@ -1,74 +1,41 @@
 <html>
-<style>
-    .container {
-        text-rendering: optimizeLegibility;
-        font-feature-settings: "calt" on;
-        box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: calc(100vh - 48px);
-
-        -webkit-text-size-adjust: 100%;
-        -webkit-font-smoothing: antialiased;
-        -webkit-box-align: center;
-        -webkit-box-pack: center;
-    }
-
-    .figure {
-        display: block;
-        margin: 0px;
-        position: relative;
-        background-size: contain;
-        background-repeat: no-repeat;
-        box-shadow: rgba(2, 8, 20, 0.1) 0px 2px 8px, rgba(2, 8, 20, 0.08) 0px 8px 16px;
-        width: 387px;
-        height: 824px;
-        overflow: hidden;
-        z-index: 1;
-        transform: scale(1);
-        filter: grayscale(0%);
-        background-color: black;
-        border-radius: 48px;
-    }
-
-    .notch {
-        box-sizing: border-box;
-        display: block;
-        fill: rgb(9, 10, 13);
-        left: 50%;
-        position: absolute;
-        top: 12px;
-        transform: translateX(-50%);
-        width: 165px;
-        z-index: 2;
-        overflow: hidden;
-    }
-
-    iframe {
-        top: 0px;
-        left: 0px;
-        margin: 12px;
-        width: calc(100% - 24px);
-        height: calc(100% - 24px);
-        border: none;
-        overflow: hidden;
-        z-index: 1;
-        border-radius: 38px;
-    }
-</style>
+<head>
+    <link rel="stylesheet" href="assets/main.css">
+    <script src="https://kit.fontawesome.com/600468dbdf.js" crossorigin="anonymous"></script>
+</head>
 
 <body>
     <div class="container">
-        <figure class="figure">
-            <svg viewBox="0 0 219 31" class="notch">
-                <path d="M0 1V0h219v1a5 5 0 0 0-5 5v3c0 12.15-9.85 22-22 22H27C14.85 31 5 21.15 5 9V6a5 5 0 0 0-5-5z"
-                    fill-rule="evenodd">
-                </path>
-            </svg>
-            <iframe mode="ios" title="preview" src="https://shlokas-staging.netlify.app" class="iframe">
-            </iframe>
-        </figure>
+        <div class="column first">
+            <img
+                class="logo"
+                src="https://raw.githubusercontent.com/akdasa-studios/shlokas/main/docs/logo.svg"
+            />
+
+            <p>Learn Vedic verses to spiritualize your mind! This app is a collection of shlokas from the Vedas, Upanishads, Bhagavad Gita, and other spiritual texts. The app is designed to help you learn the verses by heart. It is also a great way to learn Sanskrit. Shlokas uses an interval repetition algorithm to help you learn the verses. So you can learn several verses a day.</p>
+
+            <div class="buttons">
+                <a href="https://github.com/akdasa-studios/shlokas">
+                    <img src="assets/github.svg" class="button" />
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=pABmYgurXCg&ab_channel=AdvaitaK%E1%B9%9B%E1%B9%A3%E1%B9%87aD%C4%81sa">
+                    <img src="assets/youtube.svg" class="button" />
+                </a>
+            </div>
+        </div>
+
+        <div class="column second">
+            <figure class="figure">
+                <svg viewBox="0 0 219 31" class="notch">
+                    <path d="M0 1V0h219v1a5 5 0 0 0-5 5v3c0 12.15-9.85 22-22 22H27C14.85 31 5 21.15 5 9V6a5 5 0 0 0-5-5z"
+                        fill-rule="evenodd">
+                    </path>
+                </svg>
+                <iframe mode="ios" title="preview" src="https://shlokas-staging.netlify.app" class="iframe">
+                </iframe>
+            </figure>
+        </div>
     </div>
 </body>
 
