@@ -1,0 +1,56 @@
+.container {
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "calt" on;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 48px);
+
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+.figure {
+    display: block;
+    margin: 0px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-shadow: rgba(2, 8, 20, 0.1) 0px 2px 8px, rgba(2, 8, 20, 0.08) 0px 8px 16px;
+    width: 387px;
+    height: 824px;
+    overflow: hidden;
+    z-index: 1;
+    transform: scale(1);
+    filter: grayscale(0%);
+    background-color: black;
+    border-radius: 48px;
+}
+
+.notch {
+    box-sizing: border-box;
+    display: block;
+    fill: rgb(9, 10, 13);
+    left: 50%;
+    position: absolute;
+    top: 12px;
+    transform: translateX(-50%);
+    width: 165px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+iframe {
+    top: 0px;
+    left: 0px;
+    margin: 12px;
+    width: calc(100% - 24px);
+    height: calc(100% - 24px);
+    border: none;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 38px;
+}
