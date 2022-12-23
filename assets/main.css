@@ -102,3 +102,17 @@ iframe {
     z-index: 1;
     border-radius: 38px;
 }
+
+.lang {
+    font-size: x-large;
+    /* cursor: pointer; */
+    user-select: none;
+}
+
+.debug {
+    background-color: gainsboro;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
